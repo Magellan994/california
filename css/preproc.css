@@ -9,6 +9,14 @@
 .container {
   max-width: 1294px; }
 
+nav .navbar-nav a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-left: 44px; }
 @media screen and (max-width: 990px) {
   nav img {
     order: 2; } }
@@ -19,18 +27,21 @@
 .navbar-collapse {
   flex-grow: 0; }
 
-.banner .main_banner {
+.banner .container
+.main_banner {
   background: #DCE5E2;
   border-radius: 32px;
-  max-height: 100vh;
-  width: 100%; }
-  .banner .main_banner .text {
+  max-height: 100vh; }
+  .banner .container
+  .main_banner .text {
     margin: 145px 0 265px 56px;
     position: absolute; }
     @media screen and (max-width: 1024px) {
-      .banner .main_banner .text {
+      .banner .container
+      .main_banner .text {
         margin: 50px 0 265px 56px; } }
-    .banner .main_banner .text h1 {
+    .banner .container
+    .main_banner .text h1 {
       font-family: "Readex Pro", sans-serif;
       font-style: normal;
       font-weight: 400;
@@ -39,11 +50,13 @@
       color: #000000;
       text-align: left; }
       @media screen and (max-width: 1024px) {
-        .banner .main_banner .text h1 {
+        .banner .container
+        .main_banner .text h1 {
           font-weight: 300;
           font-size: 38px;
           line-height: 50px; } }
-    .banner .main_banner .text p {
+    .banner .container
+    .main_banner .text p {
       font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
@@ -53,9 +66,11 @@
       padding-top: 19px;
       padding-bottom: 30px; }
       @media screen and (max-width: 990px) {
-        .banner .main_banner .text p {
+        .banner .container
+        .main_banner .text p {
           text-align: left; } }
-    .banner .main_banner .text a {
+    .banner .container
+    .main_banner .text a {
       font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
@@ -67,15 +82,19 @@
       border-radius: 200px;
       padding: 14px 53px; }
       @media screen and (max-width: 990px) {
-        .banner .main_banner .text a {
+        .banner .container
+        .main_banner .text a {
           margin-right: 300px; } }
-  .banner .main_banner .for_img {
+  .banner .container
+  .main_banner .for_img {
     align-items: end; }
     @media screen and (max-width: 990px) {
-      .banner .main_banner .for_img {
+      .banner .container
+      .main_banner .for_img {
         position: relative;
         right: 70px; } }
-    .banner .main_banner .for_img img {
+    .banner .container
+    .main_banner .for_img img {
       width: 100%;
       height: 100%;
       position: relative;
@@ -108,10 +127,13 @@
     @media screen and (max-width: 980px) {
       .second_section .item:hover {
         display: none; } }
-  .second_section .item .Timg {
-    margin-top: 150px; }
+  .second_section .item .smartp {
+    margin-top: 144px; }
+  .second_section .item .ftext {
+    position: relative;
+    top: 114px; }
   .second_section .item img:nth-child(3) {
-    margin-top: 50px; }
+    margin-top: 42px; }
   .second_section .item h4 {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
@@ -131,7 +153,7 @@
   .second_section .item .watches {
     position: relative;
     top: 70px;
-    left: 20px; }
+    left: 70px; }
 
 .most_salled h3 {
   font-family: "Readex Pro", sans-serif;
@@ -519,8 +541,7 @@
   body {
     font-size: 16px;
     background: #FFFFFF;
-    text-align: right;
-    overflow: hidden; } }
+    text-align: right; } }
 
 @media screen and (max-width: 990px) {
   #menu {
