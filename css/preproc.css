@@ -27,36 +27,42 @@ nav .navbar-nav a {
 .navbar-collapse {
   flex-grow: 0; }
 
-.banner .container
-.main_banner {
+.banner .container {
+  max-width: 1290px; }
+.banner .main_banner {
   background: #DCE5E2;
   border-radius: 32px;
   max-height: 100vh; }
-  .banner .container
-  .main_banner .text {
+  @media screen and (max-width: 990px) {
+    .banner .main_banner {
+      margin-left: 20px; } }
+  .banner .main_banner .text {
     margin: 145px 0 265px 56px;
     position: absolute; }
     @media screen and (max-width: 1024px) {
-      .banner .container
-      .main_banner .text {
+      .banner .main_banner .text {
         margin: 50px 0 265px 56px; } }
-    .banner .container
-    .main_banner .text h1 {
+    .banner .main_banner .text h1 {
       font-family: "Readex Pro", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 58px;
       line-height: 70px;
-      color: #000000;
-      text-align: left; }
+      color: #000000; }
       @media screen and (max-width: 1024px) {
-        .banner .container
-        .main_banner .text h1 {
+        .banner .main_banner .text h1 {
           font-weight: 300;
           font-size: 38px;
           line-height: 50px; } }
-    .banner .container
-    .main_banner .text p {
+      @media screen and (max-width: 990px) {
+        .banner .main_banner .text h1 {
+          text-align: left; } }
+      @media screen and (max-width: 830px) {
+        .banner .main_banner .text h1 {
+          font-weight: 200;
+          font-size: 28px;
+          line-height: 27px; } }
+    .banner .main_banner .text p {
       font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
@@ -66,11 +72,9 @@ nav .navbar-nav a {
       padding-top: 19px;
       padding-bottom: 30px; }
       @media screen and (max-width: 990px) {
-        .banner .container
-        .main_banner .text p {
+        .banner .main_banner .text p {
           text-align: left; } }
-    .banner .container
-    .main_banner .text a {
+    .banner .main_banner .text a {
       font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
@@ -82,24 +86,27 @@ nav .navbar-nav a {
       border-radius: 200px;
       padding: 14px 53px; }
       @media screen and (max-width: 990px) {
-        .banner .container
-        .main_banner .text a {
+        .banner .main_banner .text a {
           margin-right: 300px; } }
-  .banner .container
-  .main_banner .for_img {
-    align-items: end; }
-    @media screen and (max-width: 990px) {
-      .banner .container
-      .main_banner .for_img {
-        position: relative;
-        right: 70px; } }
-    .banner .container
-    .main_banner .for_img img {
-      width: 100%;
-      height: 100%;
+      @media screen and (max-width: 768px) {
+        .banner .main_banner .text a {
+          font-size: 15px;
+          line-height: 20px;
+          padding: 11px 33px;
+          margin-bottom: 20px; } }
+  @media screen and (max-width: 990px) {
+    .banner .main_banner .for_img {
       position: relative;
-      right: -570px;
-      background-repeat: no-repeat; }
+      right: 70px; } }
+  .banner .main_banner .for_img img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: -570px;
+    background-repeat: no-repeat; }
+    @media screen and (max-width: 830px) {
+      .banner .main_banner .for_img img {
+        left: 450px; } }
 
 .second_section h2 {
   font-family: "Readex Pro", sans-serif;
@@ -109,6 +116,10 @@ nav .navbar-nav a {
   line-height: 52px;
   text-align: center;
   color: #000000; }
+  @media screen and (max-width: 800px) {
+    .second_section h2 {
+      font-size: 32px;
+      line-height: 42px; } }
 .second_section p {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
@@ -117,6 +128,15 @@ nav .navbar-nav a {
   line-height: 17px;
   text-align: center;
   color: #000000; }
+  @media screen and (max-width: 800px) {
+    .second_section p {
+      font-size: 12px;
+      line-height: 15px; } }
+.second_section .first_sec {
+  margin-bottom: 20px; }
+@media screen and (max-width: 768px) {
+  .second_section img {
+    width: 50%; } }
 .second_section .item {
   background: #FFFFFF;
   filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25));
@@ -124,11 +144,22 @@ nav .navbar-nav a {
   .second_section .item:hover {
     transform: translateY(30px) scale(1.05);
     transition: ease-in-out 0s; }
-    @media screen and (max-width: 980px) {
+    @media screen and (max-width: 990px) {
       .second_section .item:hover {
         display: none; } }
   .second_section .item .smartp {
     margin-top: 144px; }
+  @media screen and (max-width: 990px) {
+    .second_section .item .lt_p {
+      position: relative;
+      bottom: 150px; } }
+  @media screen and (max-width: 990px) {
+    .second_section .item .lt_t {
+      position: relative;
+      bottom: 140px; } }
+  @media screen and (max-width: 990px) {
+    .second_section .item .lt_img {
+      margin-right: 400px; } }
   .second_section .item .ftext {
     position: relative;
     top: 114px; }
@@ -163,6 +194,10 @@ nav .navbar-nav a {
   line-height: 52px;
   text-align: center;
   color: #000000; }
+  @media screen and (max-width: 800px) {
+    .most_salled h3 {
+      font-size: 32px;
+      line-height: 42px; } }
 .most_salled p {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
@@ -171,15 +206,21 @@ nav .navbar-nav a {
   line-height: 17px;
   color: #000000;
   text-align: center; }
-@media screen and (max-width: 990px) {
-  .most_salled .information {
-    margin-left: 180px; } }
 .most_salled .information .hov:hover {
   transform: translateY(20px) scale(1.05);
   transition: ease-in-out 1s; }
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 990px) {
     .most_salled .information .hov:hover {
       display: none; } }
+.most_salled .information img {
+  margin-right: 62px;
+  position: relative; }
+  @media screen and (max-width: 800px) {
+    .most_salled .information img {
+      left: 10px; } }
+  @media screen and (max-width: 768px) {
+    .most_salled .information img {
+      left: -168px; } }
 .most_salled .information h4 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
@@ -188,6 +229,14 @@ nav .navbar-nav a {
   line-height: 28px;
   color: #000000;
   margin-top: 40px; }
+  @media screen and (max-width: 990px) {
+    .most_salled .information h4 {
+      position: relative;
+      text-align: center;
+      left: 30px; } }
+  @media screen and (max-width: 830px) {
+    .most_salled .information h4 {
+      margin-right: 60px; } }
 .most_salled .information p {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -198,7 +247,18 @@ nav .navbar-nav a {
   margin-top: 9px;
   text-align: left;
   display: block;
-  width: 261px; }
+  width: 261px;
+  position: relative; }
+  @media screen and (max-width: 990px) {
+    .most_salled .information p {
+      margin-left: 130px;
+      text-align: center; } }
+  @media screen and (max-width: 830px) {
+    .most_salled .information p {
+      margin-left: 70px; } }
+  @media screen and (max-width: 768px) {
+    .most_salled .information p {
+      left: 170px; } }
   .most_salled .information p:last-child {
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -207,6 +267,9 @@ nav .navbar-nav a {
     line-height: 22px;
     color: #000000;
     text-align: left; }
+    @media screen and (max-width: 990px) {
+      .most_salled .information p:last-child {
+        text-align: center; } }
 .most_salled .first_inf p:last-child {
   margin-top: 33px; }
 
@@ -221,6 +284,10 @@ nav .navbar-nav a {
     line-height: 52px;
     text-align: center;
     color: #000000; }
+    @media screen and (max-width: 800px) {
+      .best_around h3 {
+        font-size: 32px;
+        line-height: 42px; } }
   .best_around p {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
@@ -229,6 +296,22 @@ nav .navbar-nav a {
     line-height: 17px;
     text-align: center;
     color: #000000; }
+  .best_around .b_a_text .gadgets .sec_ba {
+    padding-bottom: 43px; }
+    @media screen and (max-width: 990px) {
+      .best_around .b_a_text .gadgets .sec_ba {
+        padding-bottom: 35px; } }
+    @media screen and (max-width: 830px) {
+      .best_around .b_a_text .gadgets .sec_ba {
+        padding-bottom: 30px; } }
+  .best_around .b_a_text .gadgets .third_ba {
+    padding-bottom: 105px; }
+    @media screen and (max-width: 990px) {
+      .best_around .b_a_text .gadgets .third_ba {
+        padding-bottom: 79px; } }
+    @media screen and (max-width: 830px) {
+      .best_around .b_a_text .gadgets .third_ba {
+        padding-bottom: 65px; } }
   .best_around .b_a_text .gadgets .shadow_b_a {
     background-color: #F8F9FA;
     border-radius: 16px; }
@@ -243,6 +326,10 @@ nav .navbar-nav a {
     text-align: center;
     color: #000000;
     padding-bottom: 30px; }
+    @media screen and (max-width: 800px) {
+      .best_around .b_a_text .gadgets h4 {
+        font-size: 18px;
+        line-height: 25px; } }
   .best_around .b_a_text .gadgets a {
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -259,7 +346,8 @@ nav .navbar-nav a {
     .best_around .b_a_text .gadgets a:hover {
       background-color: #d1ecf1; }
   .best_around .b_a_text .gadgets img {
-    margin-top: 30px; }
+    margin-top: 30px;
+    width: 100%; }
 
 .ideas {
   margin-top: 47px; }
@@ -271,6 +359,10 @@ nav .navbar-nav a {
     line-height: 52px;
     text-align: center;
     color: #000000; }
+    @media screen and (max-width: 800px) {
+      .ideas h3 {
+        font-size: 32px;
+        line-height: 42px; } }
   .ideas p {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
@@ -326,10 +418,17 @@ nav .navbar-nav a {
     line-height: 52px;
     text-align: center;
     color: #000000; }
+    @media screen and (max-width: 800px) {
+      .else h3 {
+        font-size: 32px;
+        line-height: 42px; } }
   .else .search {
     max-width: 650px;
     margin: auto;
     position: relative; }
+    @media screen and (max-width: 428px) {
+      .else .search {
+        max-width: 300px; } }
     .else .search .search_inf {
       width: 100%;
       background: #F8F9FA;
@@ -362,6 +461,11 @@ nav .navbar-nav a {
       color: #000000;
       margin-right: 7px;
       text-decoration: none; }
+      @media screen and (max-width: 428px) {
+        .else .search a {
+          font-size: 7px;
+          line-height: 10px;
+          padding: 6px 11px; } }
       .else .search a:hover {
         background-color: lightgrey; }
     .else .search .else_tools {
@@ -386,6 +490,10 @@ nav .navbar-nav a {
       line-height: 52px;
       text-align: center;
       color: #000000; }
+      @media screen and (max-width: 800px) {
+        .pre_end .pre_footer h3 {
+          font-size: 32px;
+          line-height: 42px; } }
     .pre_end .pre_footer p {
       font-family: "Inter", sans-serif;
       font-style: normal;
@@ -414,6 +522,9 @@ nav .navbar-nav a {
         line-height: 17px;
         text-align: center;
         color: #000000; }
+        @media screen and (max-width: 428px) {
+          .pre_end .pre_footer form input {
+            width: 250px; } }
         .pre_end .pre_footer form input:last-of-type {
           background: #000000;
           border-radius: 0 200px 200px 0;
@@ -432,17 +543,68 @@ nav .navbar-nav a {
 .end .nav_end {
   background: #F8F9FA;
   margin: auto; }
-  @media screen and (max-width: 990px) {
-    .end .nav_end .second_nav {
-      position: relative;
-      left: 400px; } }
+  .end .nav_end .second_nav {
+    position: relative; }
+    @media screen and (max-width: 990px) {
+      .end .nav_end .second_nav {
+        left: 400px; } }
+    @media screen and (max-width: 768px) {
+      .end .nav_end .second_nav {
+        left: 100px; } }
+    @media screen and (max-width: 428px) {
+      .end .nav_end .second_nav {
+        left: -50px; } }
+  @media screen and (max-width: 830px) {
+    .end .nav_end .nav_end_inf {
+      margin-top: 40px; } }
+  .end .nav_end .nav_end_inf img {
+    position: relative; }
+    @media screen and (max-width: 830px) {
+      .end .nav_end .nav_end_inf img {
+        margin-right: 70px; } }
+    @media screen and (max-width: 768px) {
+      .end .nav_end .nav_end_inf img {
+        right: 200px;
+        bottom: 70px; } }
+    @media screen and (max-width: 428px) {
+      .end .nav_end .nav_end_inf img {
+        left: -28px; } }
+  .end .nav_end .nav_nav {
+    position: relative; }
+    @media screen and (max-width: 830px) {
+      .end .nav_end .nav_nav {
+        left: 50px; } }
+    @media screen and (max-width: 800px) {
+      .end .nav_end .nav_nav {
+        left: 90px; } }
+    @media screen and (max-width: 428px) {
+      .end .nav_end .nav_nav {
+        left: -50px; } }
   .end .nav_end p {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #000000; }
+    color: #000000;
+    position: relative; }
+    @media screen and (max-width: 830px) {
+      .end .nav_end p {
+        font-weight: 250;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: left; } }
+    @media screen and (max-width: 800px) {
+      .end .nav_end p {
+        font-size: 12px;
+        line-height: 15px; } }
+    @media screen and (max-width: 768px) {
+      .end .nav_end p {
+        left: 256px;
+        bottom: 60px; } }
+    @media screen and (max-width: 428px) {
+      .end .nav_end p {
+        left: 70px; } }
   .end .nav_end ul {
     list-style: none; }
     .end .nav_end ul li {
@@ -503,12 +665,15 @@ nav .navbar-nav a {
     -webkit-backface-visibility: visible;
     transition: opacity 200ms ease;
     border-radius: 30px; }
+    @media screen and (max-width: 990px) {
+      .owl-theme .owl-dots .owl-dot span {
+        display: none; } }
 
 .owl-nav .owl-prev {
   position: absolute;
   left: 5px;
   top: 38%; }
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 990px) {
     .owl-nav .owl-prev {
       display: none; } }
 
@@ -518,12 +683,15 @@ nav .navbar-nav a {
   content: "\f053";
   font-size: 50px;
   color: black; }
+  @media screen and (max-width: 990px) {
+    .owl-nav .owl-prev:before {
+      display: none; } }
 
 .owl-nav .owl-next {
   position: absolute;
   right: 7px;
   top: 37%; }
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 990px) {
     .owl-nav .owl-next {
       display: none; } }
 
@@ -533,6 +701,9 @@ nav .navbar-nav a {
   content: "\f054";
   font-size: 50px;
   color: black; }
+  @media screen and (max-width: 990px) {
+    .owl-nav .owl-next:before {
+      display: none; } }
 
 * {
   box-sizing: border-box; }

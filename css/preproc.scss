@@ -50,11 +50,16 @@ nav{
 
 
 .banner {
-.container
+.container{
+  max-width: 1290px;
+}
   .main_banner {
     background: #DCE5E2;
     border-radius: 32px;
     max-height: 100vh;
+  @include max-screen(990px){
+    margin-left: 20px;
+  }
 
 
     .text {
@@ -71,15 +76,20 @@ nav{
         font-size: 58px;
         line-height: 70px;
         color: $main_color;
-        @include max-screen(1024px){
+        @include max-screen(1024px) {
           font-weight: 300;
           font-size: 38px;
           line-height: 50px;
         }
-        @include max-screen(990px){}
-        text-align: left;
+        @include max-screen(990px) {
+          text-align: left;
+        }
+        @include max-screen(830px) {
+          font-weight: 200;
+          font-size: 28px;
+          line-height: 27px;
+        }
       }
-
       p {
         font-family: $second_font;
         font-style: normal;
@@ -108,6 +118,12 @@ nav{
         @include max-screen(990px){
           margin-right: 300px;
         }
+        @include max-screen(768px){
+          font-size: 15px;
+          line-height: 20px;
+          padding: 11px 33px;
+          margin-bottom: 20px;
+        }
       }
     }
     .for_img{
@@ -115,13 +131,17 @@ nav{
         position: relative;
         right: 70px;
       }
-      align-items: end;
+
+
       img {
         width: 100%;
         height: 100%;
         position: relative;
         right: -570px;
         background-repeat: no-repeat;
+        @include max-screen(830px){
+         left: 450px;
+        }
       }
     }
   }
@@ -137,6 +157,10 @@ nav{
     line-height: 52px;
     text-align: center;
     color:$main_color;
+    @include max-screen(800px){
+      font-size: 32px;
+      line-height: 42px;
+    }
   }
 
   p{
@@ -147,8 +171,20 @@ nav{
     line-height: 17px;
     text-align: center;
     color: $main_color;
+    @include max-screen(800px){
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+  .first_sec{
+    margin-bottom: 20px;
   }
 
+  img{
+    @include max-screen(768px){
+      width: 50%;
+    }
+}
   .item {
     background: #FFFFFF;
     filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25));
@@ -156,13 +192,32 @@ nav{
     &:hover{
       transform: translateY(30px) scale(1.05);
       transition: ease-in-out 0s;
-      @include max-screen(980px){
+      @include max-screen(990px){
         display: none;
       }
     }
     .smartp{
       margin-top: 144px;
     }
+      .lt_p {
+        @include max-screen(990px) {
+          position: relative;
+          bottom: 150px;
+        }
+      }
+
+      .lt_t {
+        @include max-screen(990px) {
+          position: relative;
+          bottom: 140px;
+        }
+      }
+
+      .lt_img {
+        @include max-screen(990px) {
+          margin-right: 400px;
+        }
+      }
 .ftext{
  position: relative;
  top: 114px;
@@ -199,7 +254,7 @@ nav{
   }
 }
 
-.most_salled {
+.most_salled{
   h3 {
     font-family: $main_font;
     font-style: normal;
@@ -208,6 +263,9 @@ nav{
     line-height: 52px;
     text-align: center;
     color: $main_color;
+    @include max-screen(800px){
+      font-size: 32px;
+      line-height: 42px;}
   }
 
   p {
@@ -223,19 +281,26 @@ nav{
 
   .information {
     @include max-screen(990px){
-      margin-left: 180px;
+
     }
     .hov {
       &:hover {
         transform: translateY(20px) scale(1.05);
         transition: ease-in-out 1s;
-        @include max-screen(980px){
+        @include max-screen(990px){
           display: none;
         }
       }
     }
     img {
-
+     margin-right: 62px;
+      position: relative;
+      @include max-screen(800px) {
+        left: 10px;
+      }
+      @include max-screen(768px){
+        left: -168px;
+      }
     }
 
     h4 {
@@ -246,6 +311,14 @@ nav{
       line-height: 28px;
       color: $main_color;
       margin-top: 40px;
+      @include max-screen(990px){
+     position: relative;
+        text-align: center;
+        left: 30px;
+      }
+      @include max-screen(830px){
+       margin-right: 60px;
+      }
     }
 
     p {
@@ -259,7 +332,17 @@ nav{
       text-align: left;
       display: block;
       width: 261px;
-
+      position: relative;
+      @include max-screen(990px){
+      margin-left: 130px;
+        text-align: center;
+      }
+      @include max-screen(830px){
+        margin-left: 70px;
+      }
+      @include max-screen(768px){
+        left: 170px;
+      }
       &:last-child {
         font-family: $second_font;
         font-style: normal;
@@ -268,6 +351,9 @@ nav{
         line-height: 22px;
         color: $main_color;
         text-align: left;
+        @include max-screen(990px){
+           text-align: center;
+        }
       }
     }
   }
@@ -290,6 +376,9 @@ nav{
     line-height: 52px;
     text-align: center;
     color: $main_color;
+    @include max-screen(800px){
+      font-size: 32px;
+      line-height: 42px;}
   }
   p{
     font-family: $main_font;
@@ -303,6 +392,24 @@ nav{
 
   .b_a_text{
     .gadgets{
+      .sec_ba{
+        padding-bottom: 43px;
+        @include max-screen(990px){
+          padding-bottom: 35px;}
+        @include max-screen(830px){
+          padding-bottom: 30px;
+        }
+      }
+      .third_ba{
+        padding-bottom: 105px;
+        @include max-screen(990px){
+          padding-bottom: 79px;
+        }
+        @include max-screen(830px){
+          padding-bottom: 65px;
+        }
+
+      }
       .shadow_b_a{
         background-color: #F8F9FA;
         border-radius: 16px;
@@ -319,6 +426,10 @@ nav{
         text-align: center;
         color: $main_color;
         padding-bottom: 30px;
+        @include max-screen(800px){
+          font-size: 18px;
+          line-height: 25px;
+        }
 
       }
       a{
@@ -340,6 +451,7 @@ nav{
       }
       img{
         margin-top: 30px;
+        width: 100%;
       }
     }
 
@@ -355,6 +467,9 @@ nav{
     line-height: 52px;
     text-align: center;
     color:$main_color;
+    @include max-screen(800px){
+      font-size: 32px;
+      line-height: 42px;}
   }
   p{
     font-family: $main_font;
@@ -420,12 +535,18 @@ nav{
     line-height: 52px;
     text-align: center;
     color: $main_color;
+    @include max-screen(800px){
+      font-size: 32px;
+      line-height: 42px;}
   }
 
   .search {
     max-width: 650px;
     margin: auto;
     position: relative;
+    @include max-screen(428px){
+      max-width: 300px;
+    }
     .search_inf{
       width: 100%;
       background: #F8F9FA;
@@ -462,6 +583,11 @@ nav{
       color: $main_color;
       margin-right: 7px;
       text-decoration: none;
+      @include max-screen(428px){
+        font-size: 7px;
+        line-height: 10px;
+        padding: 6px 11px;
+      }
       &:hover{
         background-color: lightgrey;
       }
@@ -491,6 +617,9 @@ nav{
       line-height: 52px;
       text-align: center;
       color: $main_color;
+      @include max-screen(800px){
+        font-size: 32px;
+        line-height: 42px;}
     }
     p{
       font-family: $second_font;
@@ -525,6 +654,9 @@ nav{
         line-height: 17px;
         text-align: center;
         color: $main_color;
+        @include max-screen(428px){
+          width: 250px;
+        }
 
         &:last-of-type{
           background: $main_color;
@@ -550,9 +682,46 @@ nav{
     background: #F8F9FA;
     margin: auto;
     .second_nav{
+      position: relative;
       @include max-screen(990px){
+        left:400px;}
+      @include max-screen(768px){
+        left: 100px;
+      }
+      @include max-screen(428px){
+        left: -50px;
+      }
+
+    }
+    .nav_end_inf {
+      @include max-screen(830px) {
+        margin-top: 40px;
+      }
+
+      img {
         position: relative;
-        left:400px;
+        @include max-screen(830px) {
+          margin-right: 70px;
+        }
+        @include max-screen(768px){
+          right: 200px;
+          bottom: 70px;
+        }
+        @include max-screen(428px){
+          left: -28px;
+        }
+      }
+    }
+    .nav_nav{
+      position: relative;
+      @include max-screen(830px){
+        left: 50px;
+      }
+      @include max-screen(800px) {
+        left: 90px;
+      }
+      @include max-screen(428px){
+        left: -50px;
       }
     }
     p{
@@ -562,6 +731,24 @@ nav{
       font-size: 16px;
       line-height: 19px;
       color: $main_color;
+      position: relative;
+      @include max-screen(830px){
+        font-weight: 250;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: left;
+      }
+      @include max-screen(800px){
+        font-size: 12px;
+        line-height: 15px;
+      }
+      @include max-screen(768px){
+        left: 256px;
+        bottom: 60px;
+      }
+      @include max-screen(428px){
+        left: 70px;
+      }
     }
     ul{
       list-style: none;
@@ -640,6 +827,9 @@ nav{
         -webkit-backface-visibility: visible;
         transition: opacity 200ms ease;
         border-radius: 30px;
+        @include max-screen(990px){
+          display: none;
+        }
       }
     }
   }
@@ -648,7 +838,7 @@ nav{
   position: absolute;
   left: 5px;
   top: 38%;
-  @include max-screen(980px){
+  @include max-screen(990px){
     display: none;
   }
 }
@@ -659,6 +849,9 @@ nav{
   content: "\f053";
   font-size: 50px;
   color: black;
+  @include max-screen(990px){
+    display: none;
+  }
 
 }
 
@@ -666,7 +859,7 @@ nav{
   position: absolute;
   right: 7px;
   top: 37%;
-  @include max-screen(980px){
+  @include max-screen(990px){
     display: none;
   }
 }
@@ -677,6 +870,9 @@ nav{
   content: "\f054";
   font-size: 50px;
   color: black;
+  @include max-screen(990px){
+    display: none;
+  }
 }
 // Colors
 $color-one: #34495E;
