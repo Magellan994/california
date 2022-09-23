@@ -75,6 +75,13 @@ nav{
   @include max-screen(990px){
     margin-left: 20px;
   }
+    @include max-screen(834px){
+padding-bottom: 30px;
+      margin-right: 20px;
+    }
+    @include max-screen(428px){
+     margin: 0;
+    }
 
 
     .text {
@@ -82,6 +89,10 @@ nav{
       position: absolute;
       @include max-screen(1024px){
         margin: 50px 0 265px 56px;
+      }
+      @include max-screen(428px)
+      {
+        margin: 0;
       }
 
       h1 {
@@ -104,6 +115,12 @@ nav{
           font-size: 28px;
           line-height: 27px;
         }
+        @include max-screen(428px){
+          font-weight: 100;
+          font-size: 12px;
+          line-height: 16px;
+          margin-top:30px;
+        }
       }
       p {
         font-family: $second_font;
@@ -116,6 +133,12 @@ nav{
         padding-bottom: 30px;
         @include max-screen(990px){
           text-align: left;
+        }
+        @include max-screen(428px){
+         font-weight: 100;
+          font-size: 8px;
+          line-height: 10px;
+          padding: 0;
         }
       }
 
@@ -139,6 +162,12 @@ nav{
           padding: 11px 33px;
           margin-bottom: 20px;
         }
+        @include max-screen(428px){
+          font-size: 9px;
+          line-height: 12px;
+          padding: 8px 20px;
+          margin-bottom: 20px;
+        }
       }
     }
     .for_img{
@@ -154,8 +183,12 @@ nav{
         position: relative;
         right: -570px;
         background-repeat: no-repeat;
-        @include max-screen(830px){
+        @include max-screen(834px){
          left: 450px;
+          top: 30px;
+        }
+        @include max-screen(428px){
+          left: 250px;
         }
       }
     }
@@ -176,6 +209,11 @@ nav{
       font-size: 32px;
       line-height: 42px;
     }
+    @include max-screen(428px){
+      font-size: 16px;
+      line-height: 17px;
+    }
+
   }
 
   p{
@@ -188,7 +226,11 @@ nav{
     color: $main_color;
     @include max-screen(800px){
       font-size: 12px;
-      line-height: 15px;
+      line-height: 13px;
+    }
+    @include max-screen(428px){
+      font-size: 8px;
+      line-height: 11px;
     }
   }
   .first_sec{
@@ -219,12 +261,18 @@ nav{
           position: relative;
           bottom: 150px;
         }
+        @include max-screen(428px){
+          top: -70px;
+        }
       }
 
       .lt_t {
         @include max-screen(990px) {
           position: relative;
           bottom: 140px;
+        }
+        @include max-screen(428px){
+          top: -65px;
         }
       }
 
@@ -251,6 +299,10 @@ nav{
       line-height: 38px;
       text-align: right;
       color: #000000;
+      @include max-screen(428px){
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
     p {
       font-family: $second_font;
@@ -260,11 +312,18 @@ nav{
       line-height: 19px;
       text-align: right;
       color: $main_color;
+      @include max-screen(428px){
+        font-size: 10px;
+        line-height: 14px;
+      }
     }
     .watches{
       position: relative;
       top:70px;
       left:70px;
+      @include max-screen(428px) {
+        top: 30px;
+      }
     }
   }
 }
@@ -316,6 +375,9 @@ nav{
       @include max-screen(768px){
         left: -168px;
       }
+      @include max-screen(428px){
+        left: -10px;
+      }
     }
 
     h4 {
@@ -331,7 +393,7 @@ nav{
         text-align: center;
         left: 30px;
       }
-      @include max-screen(830px){
+      @include max-screen(834px){
        margin-right: 60px;
       }
     }
@@ -352,11 +414,14 @@ nav{
       margin-left: 130px;
         text-align: center;
       }
-      @include max-screen(830px){
+      @include max-screen(834px){
         margin-left: 70px;
       }
       @include max-screen(768px){
         left: 170px;
+      }
+      @include max-screen(428px){
+        left: -10px;
       }
       &:last-child {
         font-family: $second_font;
@@ -368,6 +433,9 @@ nav{
         text-align: left;
         @include max-screen(990px){
            text-align: center;
+        }
+        @include max-screen(428px){
+          margin-bottom: 20px;
         }
       }
     }
@@ -394,6 +462,10 @@ nav{
     @include max-screen(800px){
       font-size: 32px;
       line-height: 42px;}
+    @include max-screen(428px){
+      font-size: 22px;
+      line-height: 32px;
+    }
   }
   p{
     font-family: $main_font;
@@ -403,6 +475,9 @@ nav{
     line-height: 17px;
     text-align: center;
     color: $main_color;
+    @include max-screen(428px){
+
+    }
   }
 
   .b_a_text{
@@ -483,8 +558,8 @@ nav{
     text-align: center;
     color:$main_color;
     @include max-screen(800px){
-      font-size: 32px;
-      line-height: 42px;}
+      font-size: 20px;
+      line-height: 24px;}
   }
   p{
     font-family: $main_font;
@@ -494,6 +569,10 @@ nav{
     line-height: 17px;
     text-align: center;
     color: #000000;
+    @include max-screen(428px){
+      font-size: 10px;
+      line-height: 14px;
+    }
   }
   a{
     font-family: $second_font;
@@ -509,6 +588,11 @@ nav{
     @include max-screen(990px){
       position: absolute;
       left: 45%;
+    }
+    @include max-screen(428px){
+      font-size: 20px;
+      line-height: 23px;
+      left: 170px;
     }
     &:after{
       content: url("../img/arrow.svg");
@@ -529,6 +613,10 @@ nav{
       margin-bottom: 28px;
       @include max-screen(990px){
         text-align: center;
+      }
+      @include max-screen(428px){
+        font-size: 14px;
+        line-height: 20px;
       }
     }
   }
@@ -592,8 +680,15 @@ nav{
     input{
       border: none;
       background: none;
-      width: 92%;
       outline: none;
+      width: 70%;
+      &::placeholder{
+        @include max-screen(428px){
+          font-size: 12px;
+          line-height: 20px;
+        }
+
+      }
     }
   }
 }
@@ -616,6 +711,10 @@ nav{
         font-size: 32px;
         line-height: 42px;}
     }
+    @include max-screen(428px){
+      font-size: 20px;
+      line-height: 28px
+    }
     p{
       font-family: $second_font;
       font-style: normal;
@@ -624,6 +723,10 @@ nav{
       line-height: 19px;
       text-align: center;
       color: $main_color;
+      @include max-screen(428px){
+        font-size: 9px;
+        line-height: 12px;
+      }
     }
     img{
       width: 233px;
@@ -637,11 +740,19 @@ nav{
         background: none;
         outline: none;
         height: 50px;
-        width: 285px;
+        margin-left: 50px;
+        @include max-screen(544px){
+          margin-left: 0;
+        }
         &::placeholder{
          position: relative;
           left: 32px;
           color: $main_color;
+          @include max-screen(428px){
+            font-size: 12px;
+            line-height: 20px;
+            bottom: 2px;
+          }
         }
       }
       button{
@@ -649,7 +760,12 @@ nav{
         background:$main_color;
         color: #FFFFFF;
         height: 50px;
-        width: 115px;
+        padding-right: 20px;
+        padding-left: 20px;
+        @include max-screen(428px){
+          font-size: 12px;
+          line-height: 20px;
+        }
       }
     }
 
@@ -688,7 +804,9 @@ nav{
         }
         @include max-screen(428px){
           left: -28px;
+          top: -8px;
         }
+
       }
     }
     .nav_nav{
@@ -727,6 +845,7 @@ nav{
       }
       @include max-screen(428px){
         left: 70px;
+        top: -9px;
       }
     }
     ul{
@@ -743,6 +862,10 @@ nav{
             line-height: 28px;
             color: #000000;
             text-decoration: none;
+            @include max-screen(428px){
+              font-size: 13px;
+              line-height: 17px;
+            }
           }
         }
         a{
@@ -754,6 +877,10 @@ nav{
           color: #000000;
           margin-bottom: 14px;
           text-decoration: none;
+          @include max-screen(428px){
+            font-size: 10px;
+            line-height: 16px;
+          }
         }
       }
     }
@@ -771,6 +898,10 @@ nav{
       line-height: 22px;
       color: $main_color;
       margin-top: 52px;
+      @include max-screen(428px){
+        font-size: 9px;
+        line-height: 12px;
+      }
       &:before{
         content:"Made By:";
         font-family: $main_font;

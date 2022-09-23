@@ -47,12 +47,22 @@ nav .navbar-nav .dropdown-menu {
   @media screen and (max-width: 990px) {
     .banner .main_banner {
       margin-left: 20px; } }
+  @media screen and (max-width: 834px) {
+    .banner .main_banner {
+      padding-bottom: 30px;
+      margin-right: 20px; } }
+  @media screen and (max-width: 428px) {
+    .banner .main_banner {
+      margin: 0; } }
   .banner .main_banner .text {
     margin: 145px 0 265px 56px;
     position: absolute; }
     @media screen and (max-width: 1024px) {
       .banner .main_banner .text {
         margin: 50px 0 265px 56px; } }
+    @media screen and (max-width: 428px) {
+      .banner .main_banner .text {
+        margin: 0; } }
     .banner .main_banner .text h1 {
       font-family: "Readex Pro", sans-serif;
       font-style: normal;
@@ -73,6 +83,12 @@ nav .navbar-nav .dropdown-menu {
           font-weight: 200;
           font-size: 28px;
           line-height: 27px; } }
+      @media screen and (max-width: 428px) {
+        .banner .main_banner .text h1 {
+          font-weight: 100;
+          font-size: 12px;
+          line-height: 16px;
+          margin-top: 30px; } }
     .banner .main_banner .text p {
       font-family: "Inter", sans-serif;
       font-style: normal;
@@ -85,6 +101,12 @@ nav .navbar-nav .dropdown-menu {
       @media screen and (max-width: 990px) {
         .banner .main_banner .text p {
           text-align: left; } }
+      @media screen and (max-width: 428px) {
+        .banner .main_banner .text p {
+          font-weight: 100;
+          font-size: 8px;
+          line-height: 10px;
+          padding: 0; } }
     .banner .main_banner .text a {
       font-family: "Inter", sans-serif;
       font-style: normal;
@@ -105,6 +127,12 @@ nav .navbar-nav .dropdown-menu {
           line-height: 20px;
           padding: 11px 33px;
           margin-bottom: 20px; } }
+      @media screen and (max-width: 428px) {
+        .banner .main_banner .text a {
+          font-size: 9px;
+          line-height: 12px;
+          padding: 8px 20px;
+          margin-bottom: 20px; } }
   @media screen and (max-width: 990px) {
     .banner .main_banner .for_img {
       position: relative;
@@ -115,9 +143,13 @@ nav .navbar-nav .dropdown-menu {
     position: relative;
     right: -570px;
     background-repeat: no-repeat; }
-    @media screen and (max-width: 830px) {
+    @media screen and (max-width: 834px) {
       .banner .main_banner .for_img img {
-        left: 450px; } }
+        left: 450px;
+        top: 30px; } }
+    @media screen and (max-width: 428px) {
+      .banner .main_banner .for_img img {
+        left: 250px; } }
 
 .second_section h2 {
   font-family: "Readex Pro", sans-serif;
@@ -131,6 +163,10 @@ nav .navbar-nav .dropdown-menu {
     .second_section h2 {
       font-size: 32px;
       line-height: 42px; } }
+  @media screen and (max-width: 428px) {
+    .second_section h2 {
+      font-size: 16px;
+      line-height: 17px; } }
 .second_section p {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
@@ -142,7 +178,11 @@ nav .navbar-nav .dropdown-menu {
   @media screen and (max-width: 800px) {
     .second_section p {
       font-size: 12px;
-      line-height: 15px; } }
+      line-height: 13px; } }
+  @media screen and (max-width: 428px) {
+    .second_section p {
+      font-size: 8px;
+      line-height: 11px; } }
 .second_section .first_sec {
   margin-bottom: 20px; }
 @media screen and (max-width: 768px) {
@@ -164,10 +204,16 @@ nav .navbar-nav .dropdown-menu {
     .second_section .item .lt_p {
       position: relative;
       bottom: 150px; } }
+  @media screen and (max-width: 428px) {
+    .second_section .item .lt_p {
+      top: -70px; } }
   @media screen and (max-width: 990px) {
     .second_section .item .lt_t {
       position: relative;
       bottom: 140px; } }
+  @media screen and (max-width: 428px) {
+    .second_section .item .lt_t {
+      top: -65px; } }
   @media screen and (max-width: 990px) {
     .second_section .item .lt_img {
       margin-right: 400px; } }
@@ -184,6 +230,10 @@ nav .navbar-nav .dropdown-menu {
     line-height: 38px;
     text-align: right;
     color: #000000; }
+    @media screen and (max-width: 428px) {
+      .second_section .item h4 {
+        font-size: 20px;
+        line-height: 24px; } }
   .second_section .item p {
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -192,10 +242,17 @@ nav .navbar-nav .dropdown-menu {
     line-height: 19px;
     text-align: right;
     color: #000000; }
+    @media screen and (max-width: 428px) {
+      .second_section .item p {
+        font-size: 10px;
+        line-height: 14px; } }
   .second_section .item .watches {
     position: relative;
     top: 70px;
     left: 70px; }
+    @media screen and (max-width: 428px) {
+      .second_section .item .watches {
+        top: 30px; } }
 
 .most_salled h3 {
   font-family: "Readex Pro", sans-serif;
@@ -232,6 +289,9 @@ nav .navbar-nav .dropdown-menu {
   @media screen and (max-width: 768px) {
     .most_salled .information img {
       left: -168px; } }
+  @media screen and (max-width: 428px) {
+    .most_salled .information img {
+      left: -10px; } }
 .most_salled .information h4 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
@@ -245,7 +305,7 @@ nav .navbar-nav .dropdown-menu {
       position: relative;
       text-align: center;
       left: 30px; } }
-  @media screen and (max-width: 830px) {
+  @media screen and (max-width: 834px) {
     .most_salled .information h4 {
       margin-right: 60px; } }
 .most_salled .information p {
@@ -264,12 +324,15 @@ nav .navbar-nav .dropdown-menu {
     .most_salled .information p {
       margin-left: 130px;
       text-align: center; } }
-  @media screen and (max-width: 830px) {
+  @media screen and (max-width: 834px) {
     .most_salled .information p {
       margin-left: 70px; } }
   @media screen and (max-width: 768px) {
     .most_salled .information p {
       left: 170px; } }
+  @media screen and (max-width: 428px) {
+    .most_salled .information p {
+      left: -10px; } }
   .most_salled .information p:last-child {
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -281,6 +344,9 @@ nav .navbar-nav .dropdown-menu {
     @media screen and (max-width: 990px) {
       .most_salled .information p:last-child {
         text-align: center; } }
+    @media screen and (max-width: 428px) {
+      .most_salled .information p:last-child {
+        margin-bottom: 20px; } }
 .most_salled .first_inf p:last-child {
   margin-top: 33px; }
 
@@ -299,6 +365,10 @@ nav .navbar-nav .dropdown-menu {
       .best_around h3 {
         font-size: 32px;
         line-height: 42px; } }
+    @media screen and (max-width: 428px) {
+      .best_around h3 {
+        font-size: 22px;
+        line-height: 32px; } }
   .best_around p {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
@@ -372,8 +442,8 @@ nav .navbar-nav .dropdown-menu {
     color: #000000; }
     @media screen and (max-width: 800px) {
       .ideas h3 {
-        font-size: 32px;
-        line-height: 42px; } }
+        font-size: 20px;
+        line-height: 24px; } }
   .ideas p {
     font-family: "Readex Pro", sans-serif;
     font-style: normal;
@@ -382,6 +452,10 @@ nav .navbar-nav .dropdown-menu {
     line-height: 17px;
     text-align: center;
     color: #000000; }
+    @media screen and (max-width: 428px) {
+      .ideas p {
+        font-size: 10px;
+        line-height: 14px; } }
   .ideas a {
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -397,6 +471,11 @@ nav .navbar-nav .dropdown-menu {
       .ideas a {
         position: absolute;
         left: 45%; } }
+    @media screen and (max-width: 428px) {
+      .ideas a {
+        font-size: 20px;
+        line-height: 23px;
+        left: 170px; } }
     .ideas a:after {
       content: url("../img/arrow.svg");
       position: relative;
@@ -415,6 +494,10 @@ nav .navbar-nav .dropdown-menu {
       @media screen and (max-width: 990px) {
         .ideas .ideas_information p {
           text-align: center; } }
+      @media screen and (max-width: 428px) {
+        .ideas .ideas_information p {
+          font-size: 14px;
+          line-height: 20px; } }
   .ideas .album img {
     width: 100%; }
 
@@ -468,8 +551,12 @@ nav .navbar-nav .dropdown-menu {
     .else .input-group input {
       border: none;
       background: none;
-      width: 92%;
-      outline: none; }
+      outline: none;
+      width: 70%; }
+      @media screen and (max-width: 428px) {
+        .else .input-group input::placeholder {
+          font-size: 12px;
+          line-height: 20px; } }
 
 .pre_end {
   margin-bottom: 19px; }
@@ -490,6 +577,10 @@ nav .navbar-nav .dropdown-menu {
         .pre_end .pre_footer h3 {
           font-size: 32px;
           line-height: 42px; } }
+    @media screen and (max-width: 428px) {
+      .pre_end .pre_footer {
+        font-size: 20px;
+        line-height: 28px; } }
     .pre_end .pre_footer p {
       font-family: "Inter", sans-serif;
       font-style: normal;
@@ -498,6 +589,10 @@ nav .navbar-nav .dropdown-menu {
       line-height: 19px;
       text-align: center;
       color: #000000; }
+      @media screen and (max-width: 428px) {
+        .pre_end .pre_footer p {
+          font-size: 9px;
+          line-height: 12px; } }
     .pre_end .pre_footer img {
       width: 233px;
       margin: auto;
@@ -507,17 +602,30 @@ nav .navbar-nav .dropdown-menu {
       background: none;
       outline: none;
       height: 50px;
-      width: 285px; }
+      margin-left: 50px; }
+      @media screen and (max-width: 544px) {
+        .pre_end .pre_footer .input-group input {
+          margin-left: 0; } }
       .pre_end .pre_footer .input-group input::placeholder {
         position: relative;
         left: 32px;
         color: #000000; }
+        @media screen and (max-width: 428px) {
+          .pre_end .pre_footer .input-group input::placeholder {
+            font-size: 12px;
+            line-height: 20px;
+            bottom: 2px; } }
     .pre_end .pre_footer .input-group button {
       border-radius: 0px 200px 200px 0px;
       background: #000000;
       color: #FFFFFF;
       height: 50px;
-      width: 115px; }
+      padding-right: 20px;
+      padding-left: 20px; }
+      @media screen and (max-width: 428px) {
+        .pre_end .pre_footer .input-group button {
+          font-size: 12px;
+          line-height: 20px; } }
 
 .end {
   background: #F8F9FA; }
@@ -548,7 +656,8 @@ nav .navbar-nav .dropdown-menu {
           bottom: 70px; } }
       @media screen and (max-width: 428px) {
         .end .nav_end .nav_end_inf img {
-          left: -28px; } }
+          left: -28px;
+          top: -8px; } }
     .end .nav_end .nav_nav {
       position: relative; }
       @media screen and (max-width: 830px) {
@@ -584,7 +693,8 @@ nav .navbar-nav .dropdown-menu {
           bottom: 60px; } }
       @media screen and (max-width: 428px) {
         .end .nav_end p {
-          left: 70px; } }
+          left: 70px;
+          top: -9px; } }
     .end .nav_end ul {
       list-style: none; }
       .end .nav_end ul li {
@@ -599,6 +709,10 @@ nav .navbar-nav .dropdown-menu {
             line-height: 28px;
             color: #000000;
             text-decoration: none; }
+            @media screen and (max-width: 428px) {
+              .end .nav_end ul li:first-of-type a {
+                font-size: 13px;
+                line-height: 17px; } }
         .end .nav_end ul li a {
           font-family: "Inter", sans-serif;
           font-style: normal;
@@ -608,6 +722,10 @@ nav .navbar-nav .dropdown-menu {
           color: #000000;
           margin-bottom: 14px;
           text-decoration: none; }
+          @media screen and (max-width: 428px) {
+            .end .nav_end ul li a {
+              font-size: 10px;
+              line-height: 16px; } }
   .end .mades {
     margin-top: 131px;
     border-top: 3px solid #DCE5E2; }
@@ -620,6 +738,10 @@ nav .navbar-nav .dropdown-menu {
       line-height: 22px;
       color: #000000;
       margin-top: 52px; }
+      @media screen and (max-width: 428px) {
+        .end .mades p {
+          font-size: 9px;
+          line-height: 12px; } }
       .end .mades p:before {
         content: "Made By:";
         font-family: "Readex Pro", sans-serif; }
