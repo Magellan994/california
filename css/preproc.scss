@@ -235,6 +235,59 @@ padding-bottom: 30px;
   }
   .first_sec{
     margin-bottom: 20px;
+    @include max-screen(420px){
+      margin-top: 10px;
+    }
+  .lt_text{
+    @include max-screen(768px){
+      max-height: 70vh;
+    }
+    @include max-screen(428px){
+      height: 40vh;
+    }
+    img{
+      margin-left: 42px;
+      @include max-screen(834px){
+        height: 70vh;
+      }
+      @include max-screen(428px){
+        height: 40vh;
+      }
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+    .sec_text{
+      .sec_text_inf{
+        margin-top: 80px;
+        margin-left: 46px;
+        h4{
+          @include max-screen(428px){
+            text-align:left ;
+          }
+        }
+        p{
+          margin-bottom: 0;
+          @include max-screen(428px){
+            text-align: left;
+          }
+        }
+      }
+      @include max-screen(1024px){
+        img{
+          width: 60%;
+        }
+      }
+      @include max-screen(428px){
+        margin-top: -25px;
+        img{
+          order: 2;
+          position: relative;
+          left: 30px;
+        }
+      }
+    }
   }
 
   img{
@@ -277,8 +330,18 @@ padding-bottom: 30px;
       }
 
       .lt_img {
+        max-width: 100%;
+        height: auto;
+        @include max-screen(1024px){
+          max-width: 80%;
+        }
+
         @include max-screen(990px) {
           margin-right: 400px;
+        }
+        @include max-screen(420px){
+          height: auto;
+          width: 55%;
         }
       }
 .ftext{
@@ -317,16 +380,9 @@ padding-bottom: 30px;
         line-height: 14px;
       }
     }
-    .watches{
-      position: relative;
-      top:70px;
-      left:70px;
-      @include max-screen(428px) {
-        top: 30px;
-      }
-    }
   }
-}
+  }
+
 
 .most_salled{
   h3 {
@@ -373,7 +429,7 @@ padding-bottom: 30px;
         left: 10px;
       }
       @include max-screen(768px){
-        left: -168px;
+        left: -177px;
       }
       @include max-screen(428px){
         left: -10px;
@@ -388,6 +444,10 @@ padding-bottom: 30px;
       line-height: 28px;
       color: $main_color;
       margin-top: 40px;
+      @include max-screen(1024px){
+        font-size: 20px;
+        line-height: 28px;
+      }
       @include max-screen(990px){
      position: relative;
         text-align: center;
@@ -410,6 +470,10 @@ padding-bottom: 30px;
       display: block;
       width: 261px;
       position: relative;
+      @include max-screen(1024px){
+        font-size: 12px;
+        line-height: 15px;
+      }
       @include max-screen(990px){
       margin-left: 130px;
         text-align: center;
@@ -431,6 +495,10 @@ padding-bottom: 30px;
         line-height: 22px;
         color: $main_color;
         text-align: left;
+        @include max-screen(1024px){
+          font-size: 16px;
+          line-height: 20px;
+        }
         @include max-screen(990px){
            text-align: center;
         }
@@ -482,11 +550,14 @@ padding-bottom: 30px;
 
   .b_a_text{
     .gadgets{
+      @include max-screen(768px){
+        margin-top: 15px;
+      }
       .sec_ba{
         padding-bottom: 43px;
         @include max-screen(990px){
           padding-bottom: 35px;}
-        @include max-screen(830px){
+        @include max-screen(834px){
           padding-bottom: 30px;
         }
       }
@@ -495,7 +566,7 @@ padding-bottom: 30px;
         @include max-screen(990px){
           padding-bottom: 79px;
         }
-        @include max-screen(830px){
+        @include max-screen(834px){
           padding-bottom: 65px;
         }
 
@@ -503,6 +574,10 @@ padding-bottom: 30px;
       .shadow_b_a{
         background-color: #F8F9FA;
         border-radius: 16px;
+        @include max-screen(768px){
+          max-width: 50%;
+          margin: auto;
+        }
       }
       p{
         padding-top: 51px;
@@ -535,6 +610,11 @@ padding-bottom: 30px;
         border-radius: 200px;
         padding: 14px 63px;
         text-decoration: none;
+        @include max-screen(428px){
+          padding: 12px 33px;
+          font-size: 12px;
+          line-height: 15px;
+        }
         &:hover{
           background-color: #d1ecf1;
         }
@@ -542,6 +622,12 @@ padding-bottom: 30px;
       img{
         margin-top: 30px;
         width: 100%;
+        @include max-screen(768px){
+          max-width: 50%;
+        }
+        @include max-screen(428px){
+          max-width: 90%;
+        }
       }
     }
 
@@ -621,6 +707,10 @@ padding-bottom: 30px;
     }
   }
   .album{
+    @include max-screen(768px){
+      max-width: 70%;
+      margin: auto;
+    }
     img{
       width: 100%;
     }
@@ -781,7 +871,7 @@ padding-bottom: 30px;
       @include max-screen(990px){
         left:400px;}
       @include max-screen(768px){
-        left: 100px;
+        left: -100px;
       }
       @include max-screen(428px){
         left: -50px;
@@ -789,18 +879,14 @@ padding-bottom: 30px;
 
     }
     .nav_end_inf {
-      @include max-screen(830px) {
+      @include max-screen(834px) {
         margin-top: 40px;
       }
 
       img {
         position: relative;
-        @include max-screen(830px) {
+        @include max-screen(834px) {
           margin-right: 70px;
-        }
-        @include max-screen(768px){
-          right: 200px;
-          bottom: 70px;
         }
         @include max-screen(428px){
           left: -28px;
@@ -811,14 +897,51 @@ padding-bottom: 30px;
     }
     .nav_nav{
       position: relative;
-      @include max-screen(830px){
+      @include max-screen(834px){
         left: 50px;
       }
       @include max-screen(800px) {
         left: 90px;
       }
+      @include max-screen(768px){
+        left: -370px;
+        top: 170px;
+      }
       @include max-screen(428px){
         left: -50px;
+        top: 39px;
+      }
+    }
+    .first_nav{
+      position: relative;
+      @include max-screen(768px){
+      left: 270px;
+        bottom: 30px;
+      }
+      @include max-screen(428px){
+        left: -80px;
+        top: 40px;
+      }
+    }
+    .second_nav{
+      position: relative;
+@include max-screen(768px){
+     left: -370px;
+  top: 200px;
+}
+      @include max-screen(428px){
+        top: 40px;
+        left: -50px;
+      }
+    }
+    .third_nav{
+      position: relative;
+@include max-screen(768px){
+left: 270px;
+}
+      @include max-screen(428px){
+        left: -80px;
+        top: 42px;
       }
     }
     p{
@@ -829,7 +952,7 @@ padding-bottom: 30px;
       line-height: 19px;
       color: $main_color;
       position: relative;
-      @include max-screen(830px){
+      @include max-screen(834px){
         font-weight: 250;
         font-size: 13px;
         line-height: 15px;
@@ -839,9 +962,8 @@ padding-bottom: 30px;
         font-size: 12px;
         line-height: 15px;
       }
-      @include max-screen(768px){
-        left: 256px;
-        bottom: 60px;
+      @include max-screen(768px) {
+        left: 5px;
       }
       @include max-screen(428px){
         left: 70px;
